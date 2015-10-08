@@ -20,6 +20,10 @@ motto = "me too thanks"
 
 count = 0
 
+# just in case
+for post in user.get_upvoted():
+    already_done.append(post)
+
 while True:
     print "I'm awake! ", motto
     # get top 10 from r/me_irl
